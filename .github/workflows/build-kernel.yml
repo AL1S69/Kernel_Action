@@ -92,7 +92,7 @@ jobs:
                 mkdir clang-aosp
                 tar -C clang-aosp/ -zxvf clang.tar.gz
             else
-                git clone ${{ env.CUSTOM_CLANG_SOURCE }} -b ${{ env.CUSTOM_CLANG_BRANCH }} clang-aosp --depth=1
+                git clone https://github.com/projects-nexus/nexus_kernel_xiaomi_lavender.git --depth=1
             fi        
         else
             wget -O clang.zip ${{ env.CUSTOM_CLANG_SOURCE }}
