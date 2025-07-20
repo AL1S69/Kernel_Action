@@ -165,7 +165,7 @@ jobs:
     - name: Download kernel source
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone https://github.com/projects-nexus/nexus_kernel_xiaomi_lavender.git --depth=1
+        git clone https://github.com/LineageOS/android_kernel_xiaomi_lavender.git --depth=1
         if [[ ${{ env.ADD_LOCALVERSION_TO_FILENAME }} == 'true' ]]; then
           echo "LOCALVERSION=$(cat android-kernel/localversion)" >> $GITHUB_ENV
         else
